@@ -2,15 +2,19 @@
   "name": "calculadora",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "npm run build:tailwind && npm run copy:assets",
+  "build:tailwind": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
+  "copy:assets": "if exist dist ( rd /s /q dist ) & mkdir dist & copy .\\src\\index.html .\\dist\\index.html & xcopy .\\src\\scripts .\\dist\\scripts /e /i",
+  "dev": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.10",
-    "tailwindcss": "^4.1.10"
-  }
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "description": ""
 }
