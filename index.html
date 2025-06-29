@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script defer src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+NOTE:
+<body class="bg-gray-900">
+    <div class="flex justify-center">
+        <div class="container grid grid-cols-4 grid-rows-6 bg-gray-900 border-3 border-neutral-600 rounded-4xl p-4 m-10 w-80 mt-20">
+            <div class="overflow-hidden col-span-4 bg-neutral-200 border-none rounded-full m-3 p-3 text-black text-end text-2xl visor"></div>
+            <button class="col-span-2 botao p-4 text-3xl text-red-400 text-center" id="clear">C</button>
+            <button class="botao p-4 text-3xl text-green-300 text-center operador">%</button>
+            <button class="botao p-4 text-3xl text-green-300 text-center operador" >/</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">7</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">8</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">9</button>
+            <button class="botao p-4 text-3xl text-green-300 text-center operador">*</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">4</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">5</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">6</button>
+            <button class="botao p-4 text-3xl text-green-300 text-center operador">-</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">1</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">2</button>
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero">3</button>
+            <button class="botao p-4 text-3xl text-green-300 text-center operador">+</button>
+           <!-- <button class="botao p-4 text-3xl text-gray-300 text-center" id="quebrado">.</button>  -->
+            <button class="botao p-4 text-3xl text-gray-300 text-center numero col-span-2">0</button>
+            <button class="botao p-4 text-3xl text-green-300 text-center col-span-2" id="total">=</button>
+        </div>
+    </div>
+</body>
+</html>
